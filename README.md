@@ -15,6 +15,36 @@ Or the videos:
 
 ---
 
+
+
+## TABLE OF CONTENTS
+
+- [MAIN FEATURES](#main-features)
+- [INSTALLATION](#installation)
+- [COMPATIBILITY](#compatibility)
+- [CONFIGURATION](#configuration)
+- [API REFERENCE](#api-reference)
+  - [cy.checkAccessibility(context, options)](#cycheckaccessibilitycontext-options)
+- [USAGE EXAMPLES](#usage-examples)
+- [RESULTS PRESENTATION](#results-presentation)
+  - [Summary of Violations](#summary-of-violations)
+  - [Violation Details in Browser Console from Cypress Log](#violation-details-in-browser-console-from-cypress-log)
+  - [Violation Details in Tooltip when Hovering over a DOM Element on the Page](#violation-details-in-tooltip-when-hovering-over-a-dom-element-on-the-page)
+  - [Accessibility Voice](#accessibility-voice)
+  - [Accessibility Voice for Analysis at Suite Level in Cypress Log](#accessibility-voice-for-analysis-at-suite-level-in-cypress-log)
+  - [Accessibility Voice for Analysis at Test Level in Cypress Log](#accessibility-voice-for-analysis-at-test-level-in-cypress-log)
+  - [Accessibility Voice for Analysis at Violation Type Level in Cypress Log](#accessibility-voice-for-analysis-at-violation-type-level-in-cypress-log)
+  - [Accessibility Voice for Analysis at DOM Element Level in Cypress Log](#accessibility-voice-for-analysis-at-dom-element-level-in-cypress-log)
+  - [Accessibility Voice for Analysis at DOM Element Level in the Web Page](#accessibility-voice-for-analysis-at-dom-element-level-in-the-web-page)
+  - [HTML Report](#html-report)
+  - [Custom Styles Based on Severity (Cypress runner and HTML Report)](#custom-styles-based-on-severity-cypress-runner-and-html-report)
+  - [Terminal Report](#terminal-report)
+- [KNOWN LIMITATIONS](#known-limitations)
+- [LICENSE](#license)
+- [CONTRIBUTING](#contributing)
+- [CHANGELOG](#changelog)
+- [EXTERNAL REFERENCES](#external-references)
+
 ## MAIN FEATURES
 
 - **Comprehensive Accessibility Analysis**: Leverages cypress-axe plugin and axe-core®  for thorough accessibility checks. Axe-core® <https://github.com/dequelabs/axe-core> is a trademark of Deque Systems, Inc. <https://www.deque.com/> in the US and other countries.
@@ -48,38 +78,7 @@ Or the videos:
 > ✔️ **The plugin analyzes DOM elements that are visible in the browser viewport as per the axe-core® plugin (it will not include hidden elements).**
 
 
-## TABLE OF CONTENTS
-
-- [wick-a11y](#wick-a11y)
-  - [MAIN FEATURES](#main-features)
-  - [TABLE OF CONTENTS](#table-of-contents)
-  - [INSTALATION](#instalation)
-  - [COMPATIBILITY](#compatibility)
-  - [CONFIGURATION](#configuration)
-  - [API REFERENCE](#api-reference)
-    - [cy.checkAccessibility(context, options)](#cycheckaccessibilitycontext-options)
-  - [USAGE EXAMPLES](#usage-examples)
-  - [RESULTS PRESENTATION](#results-presentation)
-    - [Summary of Violations](#summary-of-violations)
-    - [Violation Details in Browser Console from Cypress Log](#violation-details-in-browser-console-from-cypress-log)
-    - [Violation Details in Tooltip when Hovering over a DOM Element on the Page](#violation-details-in-tooltip-when-hovering-over-a-dom-element-on-the-page)
-    - [Accessibility Voice](#accessibility-voice)
-    - [Accessibility Voice for Analysis at Suite Level in Cypress Log](#accessibility-voice-for-analysis-at-suite-level-in-cypress-log)
-    - [Accessibility Voice for Analysis at Test Level in Cypress Log](#accessibility-voice-for-analysis-at-test-level-in-cypress-log)
-    - [Accessibility Voice for Analysis at Violation Type Level in Cypress Log](#accessibility-voice-for-analysis-at-violation-type-level-in-cypress-log)
-    - [Accessibility Voice for Analysis at DOM Element Level in Cypress Log](#accessibility-voice-for-analysis-at-dom-element-level-in-cypress-log)
-    - [Accessibility Voice for Analysis at DOM Element Level in the Web Page](#accessibility-voice-for-analysis-at-dom-element-level-in-the-web-page)
-    - [HTML Report](#html-report)
-    - [Custom Styles Based on Severity (Cypress runner and HTML Report)](#custom-styles-based-on-severity-cypress-runner-and-html-report)
-    - [Terminal Report](#terminal-report)
-  - [KNOWN LIMITATIONS](#known-limitations)
-  - [LICENSE](#license)
-  - [CONTRIBUTING](#contributing)
-  - [CHANGELOG](#changelog)
-  - [EXTERNAL REFERENCES](#external-references)
-
-
-## INSTALATION
+## INSTALLATION
 
 ```sh
 npm install wick-a11y --save-dev
@@ -108,7 +107,7 @@ npm install wick-a11y --save-dev
 
 - Compatible with all versions of Cypress v12 and Cypress v13.
 - Relies on cypress-axe (≥ 1.5.0) and axe-core® for accessibility analysis.
--  ⚠️ ** Non compatible** with versions of Cypress v14.0.0 and creater
+-  ⚠️ ** Non compatible** with versions of Cypress v14.0.0 and greater
 -  ⚠️ If you want to install wick-a11y *v*1.4.0 or earlier in a Cypress 14.0.3 project you will need to use the `--force` option:
    ```sh
    npm install wick-a11y --save-dev --force
@@ -488,9 +487,11 @@ The accessibility voice feature at the suite level in the Cypress Log provides a
 - Number of tests failed for other reasons
 - Number of tests skipped or pending
 
+[Watch the video](/videos/README.md#accessibility-voice-for-analysis-at-suite-level-in-cypress-log "Accessibility Voice for Analysis at Suite Level in Cypress Log")
+
 ![Voice Suite Level](/images/voice-suite.png)
 
-[Watch the video](/videos/README.md#accessibility-voice-for-analysis-at-suite-level-in-cypress-log "Accessibility Voice for Analysis at Suite Level in Cypress Log")
+
 
 
 ### Accessibility Voice for Analysis at Test Level in Cypress Log
@@ -503,9 +504,10 @@ The accessibility voice feature at the test level in the Cypress Log provides au
 - Number of moderate violations
 - Number of minor violations
 
+[Watch the video](/videos/README.md#accessibility-voice-for-analysis-at-test-level-in-cypress-log "Accessibility Voice for Analysis at Test Level in Cypress Log")
+
 ![Voice Test Level](/images/voice-test.png)
 
-[Watch the video](/videos/README.md#accessibility-voice-for-analysis-at-test-level-in-cypress-log "Accessibility Voice for Analysis at Test Level in Cypress Log")
 
 
 ### Accessibility Voice for Analysis at Violation Type Level in Cypress Log
@@ -516,9 +518,10 @@ The accessibility voice feature at the violation type level in the Cypress Log p
 - The severity of the violation
 - A description of the violation
 
-![Voice Violation Type Level](/images/voice-violation.png)
 
 [Watch the video](/videos/README.md#accessibility-voice-for-analysis-at-violation-type-level-in-cypress-log "Accessibility Voice for Analysis at Violation Type Level in Cypress Log")
+
+![Voice Violation Type Level](/images/voice-violation.png)
 
 
 ### Accessibility Voice for Analysis at DOM Element Level in Cypress Log
@@ -530,9 +533,10 @@ The accessibility voice feature at the DOM element level in the Cypress Log prov
 - A description of the violation
 - A summary of the actions needed to fix the issue
 
-![Voice DOM Element Level](/images/voice-dom-element.png)
 
 [Watch the video](/videos/README.md#accessibility-voice-for-analysis-at-dom-element-level-in-cypress-log "Accessibility Voice for Analysis at DOM Element Level in Cypress Log")
+
+![Voice DOM Element Level](/images/voice-dom-element.png)
 
 
 ### Accessibility Voice for Analysis at DOM Element Level in the Web Page
@@ -544,9 +548,10 @@ The wick-a11y plugin also provides accessibility voice for a DOM element by clic
 - A description of the violation
 - A summary of the actions needed to fix the issue
 
-![Voice DOM Element Web Page](/images/voice-dom-element-page.png)
 
 [Watch the video](/videos/README.md#accessibility-voice-for-analysis-at-dom-element-level-in-the-web-page "Accessibility Voice for Analysis at DOM Element Level in the Web Page")
+
+![Voice DOM Element Web Page](/images/voice-dom-element-page.png)
 
 
 ### HTML Report
@@ -615,7 +620,7 @@ MIT License. See the [LICENSE](LICENSE) file for more details.
 
 First off, thanks for taking the time to contribute!
 
-To contribute, please follow the best practices promoted by GitHub on the [Contributing to a project](https://docs.github.com/en/get-started/exploring-projects-on-github/contributing-to-a-project "Contributing to a project") page.
+To contribute, please see GitHub's document on [Forking a project](https://docs.github.com/en/get-started/exploring-projects-on-github/contributing-to-a-project "Contributing to a project") and our own document on [CONTRIBUTING](CONTRIBUTING.md).
 
 And if you like the project but just don't have the time to contribute, that's fine. There are other easy ways to support the project and show your appreciation, which we would also be very happy about:
 - Star the project
@@ -639,8 +644,8 @@ Thank you for your support!
 ### v2.1.0
 
 - Supports cypress-axe 1.7.0
-- Fix issue of Incorrect Screenshot File Path for Deeply Nested Tests and running specific tests suiteds with `--spec` (contribution by [Peter M Souza Jr](https://github.com/petermsouzajr "Peter M Souza Jr"))
-- Fix issue when a test does not include acccessibility checking and it does not fail.
+- Fix issue of Incorrect Screenshot File Path for Deeply Nested Tests and running specific tests suites with `--spec` (contribution by [Peter M Souza Jr](https://github.com/petermsouzajr "Peter M Souza Jr"))
+- Fix issue when a test does not include accessibility checking and it does not fail.
 
 ### v2.0.1
 

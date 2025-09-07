@@ -1,0 +1,17 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📚 Documentation
+    url: https://github.com/sclavijosuero/wick-a11y#readme
+    about: Check our comprehensive documentation for setup and usage guides
+  - name: 💬 Discussions
+    url: https://github.com/sclavijosuero/wick-a11y/discussions
+    about: Ask questions and share ideas with the community
+  - name: 🐛 Bug Report
+    url: https://github.com/sclavijosuero/wick-a11y/issues/new?template=bug_report.md
+    about: Report a bug or unexpected behavior
+  - name: ✨ Feature Request
+    url: https://github.com/sclavijosuero/wick-a11y/issues/new?template=feature_request.md
+    about: Suggest a new feature or improvement
+  - name: ❓ Question
+    url: https://github.com/sclavijosuero/wick-a11y/issues/new?template=question.md
+    about: Ask a question about wick-a11y
